@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 # Ignore node_modules
 node_modules/
 dist/
 .angular/
 .env
+=======
+# Ignore node_modules
+node_modules/
+dist/
+.angular/
+.env
+>>>>>>> 2f1d5262a496d92a466015c9f0f5baf9fdf557f3
