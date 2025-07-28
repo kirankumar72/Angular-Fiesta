@@ -1,0 +1,44 @@
+<body>
+  <div class="app">
+    <h1>CALCULATOR APP</h1>
+
+    <div class="calculator">
+      <input type="text" [(ngModel)]="value" placeholder="Enter Values" />
+    </div>
+
+    <div class="digits">
+      <table class="table">
+        <tr>
+          <td><button (click)="calculating('c')">C</button></td>
+          <td><button (click)="calculating('/')">/</button></td>
+          <td><button (click)="calculating('*')">*</button></td>
+          <td><button (click)="calculating('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button (click)="calculating('7')">7</button></td>
+            <td><button (click)="calculating('8')">8</button></td>
+            <td><button (click)="calculating('9')">9</button></td>
+            <td><button (click)="calculating('+')">+</button></td>
+         
+        </tr>
+        <tr>
+            <td><button (click)="calculating('4')">4</button></td>
+            <td><button (click)="calculating('5')">5</button></td>
+            <td><button (click)="calculating('6')">6</button></td>
+            <td rowspan="3"><button (click)="totalResult()">=</button></td>
+        
+        </tr>
+        <tr>
+            <td><button (click)="calculating('1')">1</button></td>
+            <td><button (click)="calculating('2')">2</button></td>
+            <td><button (click)="calculating('3')">3</button></td>
+         
+        </tr>
+        <tr>
+            <td><button (click)="calculating('0')">0</button></td>
+            <td><button (click)="calculating('.')">.</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>

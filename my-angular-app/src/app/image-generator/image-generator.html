@@ -1,0 +1,14 @@
+<body>
+    <div class="image-gen">
+        <div class="head">
+            <h1>Image Generating App</h1>
+            <input type="text" placeholder="Search for images..." [(ngModel)]="query">
+            <button (click)="searchImg()">Search</button>
+        </div>
+        <div class="result" *ngFor = "let img of images"><img [src]="img.src.medium" [alt]="img.alt">
+            <p>{{img.alt}}</p>
+        <p>Photoby : {{img.photographer}}</p></div>
+        <div *ngIf="images.length>0"><button (click)="addImg()">Load More</button></div>
+        
+    </div>
+</body>

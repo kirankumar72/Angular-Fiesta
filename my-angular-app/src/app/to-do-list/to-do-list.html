@@ -1,0 +1,11 @@
+<body>
+    <div class="to-do-list">
+        <h1>TO DO LIST APP</h1>
+        <form (ngSubmit)="addTask()">
+        <input type="text" name="task" placeholder="add your task" [(ngModel)]="task">
+        <button type="submit">Add Task</button></form>
+        <div *ngIf="listOfTask !=null" >
+            <div *ngFor="let item of listOfTask; let i = index" class="task">{{item}} <button id="updateBtn" (click)="updateTask(i)">Update</button> <button id="deleteBtn" (click)="deleteTask(i)">Delete</button>
+              </div></div>
+    </div>
+</body>

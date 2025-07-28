@@ -1,0 +1,55 @@
+<body>
+    <div class="application">
+        <div class="image"><img src="https://images.pexels.com/photos/5439438/pexels-photo-5439438.jpeg" alt="application img"></div>
+        <div class="details">
+            <form (ngSubmit)="onSubmit()">
+                <h1>Job Application</h1>
+                <p>Enter your details :</p>
+                <label for="email">Enter Email :</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" [(ngModel)]="user.email" required="">
+
+                <label for="firstName">Enter first name :</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Arun Kumar" [(ngModel)]="user.firstName">
+
+                 <label for="lastName">Enter Last name :</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Gupta"[(ngModel)]="user.lastName">
+                
+                <p>What position you are applying for?</p>
+                <input type="radio" name="position" id="manager" value="Manager" [(ngModel)]="user.gender">
+                <label for="manager">Manager</label>
+                <input type="radio" name="position" id="analyst" value="Analyst" [(ngModel)]="user.gender">
+                <label for="analyst">Analyst</label>
+                <input type="radio" name="position" id="developer" value="Developer" [(ngModel)]="user.gender">
+                <label for="developer">Developer</label>
+                <input type="radio" name="position" id="internship" value="Internship" [(ngModel)]="user.gender">
+                <label for="internship">Internship</label>
+<br>
+                <p>Education</p>
+                <input type="radio" name="education" id="school" value="High School"[(ngModel)]="user.education">
+                <label for="school">High School</label>
+                <input type="radio" name="education" id="bachelors" value="Bachelors" [(ngModel)]="user.education">
+                <label for="bachelors">Bachelors</label>
+                <input type="radio" name="education" id="masters" value="Masters"[(ngModel)]="user.education">
+                <label for="masters">Masters</label>
+               <br>
+               <p>What is your current Employment status : </p>
+               <input type="radio" name="status" id="employed" value="Employed" [(ngModel)]="user.status">
+                <label for="employed">Employed</label>
+                <input type="radio" name="status" id="self-employed" value="Self Employed"  [(ngModel)]="user.status">
+                <label for="self-employed">Self Employed</label>
+                <input type="radio" name="status" id="unemployed" value="Unemployed" [(ngModel)]="user.status">
+                <label for="unemployed">Unemployed</label>
+                <input type="radio" name="status" id="student" value="Student" [(ngModel)]="user.status">
+                <label for="student">Student</label>
+                <br>
+                <p>Work experience :</p>
+                <input type="text" name="experience" [(ngModel)]="user.experience">
+                <p>Availability to work :</p>
+                <input type="date" name="date" [(ngModel)]="user.date">
+                <p>Submit your resume by providing your resume URL</p>
+                <input type="url" name="resume" [(ngModel)]="user.resume">
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+</body>

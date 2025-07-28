@@ -1,0 +1,20 @@
+<!-- Project Grid -->
+<div *ngIf="!selectedProject" class="grid-container">
+  <div class="card" *ngFor="let project of projects">
+    <img [src]="project.image" alt="{{project.title}}" />
+    <h3>{{ project.title }}</h3>
+    <button (click)="showProject(project.id)">Show</button>
+  </div>
+</div>
+
+<!-- Show selected project -->
+<div *ngIf="selectedProject">
+  <button (click)="backToDashboard()">⬅ Back</button>
+
+  <app-weather-app *ngIf="selectedProject === 'weather'"></app-weather-app>
+  <app-calculator-app *ngIf="selectedProject === 'calculator'"></app-calculator-app>
+  <app-to-do-list *ngIf="selectedProject === 'todo'"></app-to-do-list>
+  <app-image-generator *ngIf="selectedProject === 'imagegen'"></app-image-generator>
+  <app-google-form *ngIf="selectedProject === 'form'"></app-google-form>
+  <app-login-page *ngIf="selectedProject === 'login'"></app-login-page>
+</div>

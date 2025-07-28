@@ -1,0 +1,20 @@
+<body>
+    <div class="weather">
+        <div class="head">
+         <h1>Weather App</h1>
+       <div class="city"> <input type="text" placeholder="Enter Location" [(ngModel)]="city" >
+         <button (click)="getWeather()">Get Weather</button></div>
+         <div class="result" *ngIf="temp.length>0">
+           <img *ngIf="showImage" [src]="'images/'+showImage">
+          
+        <p><span>{{main}} : </span> <span> {{desc}}</span></p>
+        <h1>{{temp}}°C</h1>
+       
+        <div class="list"><ul>
+            <li>Feels like : {{temp}} </li>
+            <li>Humidity : {{humidity}} %</li> 
+            <li> Wind Speed : {{wind}} m/s</li>
+        </ul></div></div>
+        </div>
+    </div>
+</body>
