@@ -4,11 +4,6 @@ Welcome to **Angular Fiesta** — a collection of mini-projects built using Angu
 
 ---
 
-## 🚀 Live Demo
-
-👉 [Click here to view the live app](https://kirankumar72.github.io/Angular-Fiesta/)
-
----
 
 ## 🧠 Projects Included
 
@@ -29,9 +24,6 @@ Each project is a standalone Angular component that can be launched from the das
 
 > 📌 Click the "Show" button on any project card from the dashboard to open that app.
 
-![Angular Fiesta Screenshot](https://via.placeholder.com/800x400?text=Angular+Fiesta+Dashboard+Preview)
-
----
 
 ## 🛠️ Technologies Used
 
@@ -42,6 +34,4 @@ Each project is a standalone Angular component that can be launched from the das
 - GitHub Pages for deployment
 
 ---
-
-## 📁 Project Structure
 
